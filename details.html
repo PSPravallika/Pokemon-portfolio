@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pravallika PS · Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=32" />
+</head>
+<body>
+  <!-- fades out on load so arriving from the ball's white flash is seamless -->
+  <div class="page-in" aria-hidden="true"></div>
+
+  <!-- ============ THE PAGE ============ -->
+  <main id="info" class="view is-active">
+
+    <!-- ambient sky: drifting clouds pinned to the top of the view -->
+    <div class="scene" aria-hidden="true">
+      <span class="cloud c1"></span>
+      <span class="cloud c2"></span>
+      <span class="cloud c3"></span>
+      <span class="cloud c4"></span>
+    </div>
+
+    <div class="site">
+
+      <div class="site-top">
+        <a href="index.html" class="pdx-back" aria-label="Back to grass">
+          <span class="pdx-back-arrow">←</span> Back to Grass
+        </a>
+      </div>
+
+      <!-- left: profile sidebar -->
+      <aside class="side">
+        <div class="side-tag"><span class="mini-ball"></span>Pokémon Details</div>
+        <div class="side-hero">
+          <!-- standing trainer: save your PNG as avatar.png in the project folder -->
+          <div class="side-shadow" aria-hidden="true"></div>
+          <img class="side-avatar" src="avatar.png" alt="Pravallika PS"
+               onload="var p=document.getElementById('tcgPhoto'); if(p){p.style.display='none';}"
+               onerror="this.remove();" />
+          <div class="pdx-photo" id="tcgPhoto"><span>★</span></div>
+          <div class="side-stats" aria-hidden="true">
+            <span class="side-stat ht"><i>HT</i>5</span>
+            <span class="side-stat wt"><i>WT</i>Never Ask</span>
+          </div>
+        </div>
+        <h1 class="side-name">Pravallika PS</h1>
+        <p class="side-role">2026 Graduate · AIML Engineer</p>
+        <p class="side-tagline">Engineering AI. Documenting the build.</p>
+
+        <div class="side-facts">
+          <span><i>📍</i>Bengaluru, India</span>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Skills</span>
+          <div class="pdx-chips side-chips">
+            <span class="pdx-chip">Python Development</span>
+            <span class="pdx-chip">Machine Learning</span>
+            <span class="pdx-chip">NLP & RAG</span>
+            <span class="pdx-chip">REST APIs</span>
+            <span class="pdx-chip">Data Structures (DSA)</span>
+            <span class="pdx-chip">SQL &amp; Databases</span>
+          </div>
+        </div>
+
+        <div class="side-block">
+          <span class="side-label">Links</span>
+          <div class="side-links">
+            <a href=" " target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+            <a href="mailto:advitiya.026@gmail.com">Email <span>↗</span></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- right: content (stacked sections) -->
+      <section class="main">
+
+        <!-- About -->
+        <section class="sec">
+          <h2 class="sec-title">About</h2>
+          <p class="pdx-lead">
+            I’m Pravallika  a AIML Graduate, creator, builder, and curious human who enjoys turning ideas into things that actually work.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            I like keeping things simple, experimenting with new ideas, and figuring out how people, technology, 
+            and creativity can come together to make something better.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Most of what I do sits somewhere between building, learning, creating, and solving problems. 
+            I’m always curious about how things work, why people behave the way they do, and how a good idea can become something meaningful.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            When I’m not working, you’ll probably find me exploring new ideas, learning something random, working on a side project, 
+            or just enjoying some quiet time away from a screen.
+          </p>
+          <p class="pdx-lead" style="margin-top:16px;">
+            Want to talk? You can reach me by emailing
+            <a href="mailto:advitiya.026@gmail.com">advitiya.026@gmail.com</a>.
+          </p>
+        </section>
+
+        <!-- Experience (company list ← → details) -->
+        <section class="sec">
+          <h2 class="sec-title">Experience</h2>
+          <div class="xp" id="xp">
+            <div class="xp-tabs" role="tablist">
+              <button class="xp-co" data-co="1">BlueBinarries Engineering & Solutions </button>
+              <button class="xp-co" data-co="2">VMA Labs Pvt. Ltd.</button>
+            </div>
+            <div class="xp-details">
+              <div class="xp-detail" data-co="1">
+                <h4>Python Developer Intern<span>@ BlueBinarries Engineering & Solutions</span></h4>
+                <p class="xp-date">Jan 2026 – Apr 2026 · Bengaluru</p>
+                <ul>
+                  <li>Developed Python applications using OOP and modular design.</li>
+                  <li>Built a Task Management System with CRUD functionality, prioritization and deadline tracking.</li>
+                  <li>Collaborated on debugging, testing and performance optimization.</li>
+                  <li>Participated in requirement understanding and SDLC activities.</li>
+                </ul>
+              </div>
+              <div class="xp-detail" data-co="2">
+                <h4>Python Developer Intern<span>@ VMA Labs Pvt. Ltd.</span></h4>
+                <p class="xp-date">Sep 2025 – Dec 2025 · Bengaluru</p>
+                <ul>
+                  <li>Developed Python applications and strengthened programming fundamentals.</li>
+                  <li>Used NumPy and Pandas for data processing and analysis</li>
+                  <li>Applied ML preprocessing techniques.</li>
+                  <li>Followed software development best practices.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="sec">
+          <h2 class="sec-title">Projects</h2>
+          <div class="pdx-projects">
+            <a class="pdx-proj" href="https://pspravallika.github.io/final_year_project/" target="_blank" rel="noopener">
+              <div><h4>EquityRAG</h4><p> AI-powered financial news analysis using RAG, NLP and RSS integration.</p></div>
+              <span class="pdx-proj-arrow">↗</span>
+            </a>
+            <a class="pdx-proj" href=" https://github.com/PSPravallika/front-end" target="_blank" rel="noopener">
+              <div><h4>frontend-website</h4><p>Gym Web Application – Authentication, attendance and payment management.</p></div>
+              <span class="pdx-proj-arrow">↗</span>
+            </a>
+            <a class="pdx-proj" href=" " target="_blank" rel="noopener">
+              <div><h4>Substack</h4><p>I'm new here.</p></div>
+              <span class="pdx-proj-arrow">↗</span>
+            </a>
+            <a class="pdx-proj" href=" " target="_blank" rel="noopener">
+              <div><h4>Movie Ticket Booking System</h4><p>Full-stack booking platform.</p></div>
+              <span class="pdx-proj-arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+      </section>
+    </div>
+
+    <!-- playful footer: drop a Pokémon into the crowd -->
+    <footer class="pfoot">
+      <div class="pfoot-cta">
+        <p class="pfoot-title">Gotta catch 'em all</p>
+        <p class="pfoot-sub">Every visitor leaves a Pokémon behind. Add yours to the crowd.</p>
+        <button id="pfootBtn" class="pfoot-btn">＋ Drop a Pokémon</button>
+        <span id="pfootCount" class="pfoot-count">…</span>
+      </div>
+      <div class="pfoot-stage" id="pfootStage"></div>
+      <div class="pfoot-ground" aria-hidden="true"></div>
+    </footer>
+
+    <!-- legal / fan-work disclaimer -->
+    <footer class="legal">
+      <p>Pokémon © Nintendo, Game&nbsp;Freak &amp; The&nbsp;Pokémon&nbsp;Company. An unofficial fan project.</p>
+      <p>© 2026 Pravallika PS. Writing, art &amp; code are mine, made with love. No personal data collected.</p>
+      <p class="legal-sign">Pravallika 🗿</p>
+    </footer>
+  </main>
+
+  <script src="script.js?v=32"></script>
+</body>
+</html>
