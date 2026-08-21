@@ -2,7 +2,7 @@
 
 A playful, Pokémon‑themed personal portfolio. You land on a grassy field with a floating Poké Ball — tap it, it opens with a smooth animation, and you arrive at a clean profile page. The footer has a shared *"drop a Pokémon"* counter that grows as visitors stop by.
 
-🔗 **Live demo:** https://thezeroquotient.com/portfolio
+🔗 **Live demo:** https://pspravallika.github.io/Pokemon-portfolio/
 
 ---
 
@@ -60,4 +60,4 @@ The Poké Ball, grassy backdrop, and Pokémon artwork are the intellectual prope
 
 ---
 
-Built by **Shivank Goel** · [thezeroquotient.com](https://thezeroquotient.com)
+Built by **Pravallika PS** · 
